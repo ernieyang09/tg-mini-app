@@ -39,7 +39,7 @@ jobs:
         with:
           version: 8.6.6
       - name: Install dependencies
-        run: pnpm install -P --frozen-lockfile
+        run: pnpm install --frozen-lockfile
       - name: Build
         run: pnpm build
       - name: Setup Pages
