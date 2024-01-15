@@ -17,5 +17,5 @@ export default defineConfig({
   build: {
     outDir: "./docs",
   },
-  base: "./",
+  base: "./tg-mini-app",
 })

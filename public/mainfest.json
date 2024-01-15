@@ -1,7 +1,7 @@
 {
   "url": "https://ernieyang09.github.io/tg-mini-app/",
   "name": "Pixi demo",
-  "iconUrl": "https://ernieyang09.github.io/tg-mini-app/pu-ton.png",
-  "termsOfUseUrl": "https://ernieyang09.github.io/tg-mini-app/terms-of-use.txt",
-  "privacyPolicyUrl": "https://ernieyang09.github.io/tg-mini-app/privacy-policy.txt"
+  "iconUrl": "https://ernieyang09.github.io/tg-mini-app/public/pu-ton.png",
+  "termsOfUseUrl": "https://ernieyang09.github.io/tg-mini-app/public/terms-of-use.txt",
+  "privacyPolicyUrl": "https://ernieyang09.github.io/tg-mini-app/public/privacy-policy.txt"
 }
