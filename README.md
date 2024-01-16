@@ -1,30 +1,20 @@
-# React + TypeScript + Vite
+# TG-mini-app
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Create Bot
 
-Currently, two official plugins are available:
+1. Chat with BotFather and [create a bot](https://docs.ton.org/develop/dapps/telegram-apps/step-by-step-guide#1-start-a-chat-with-botfather)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Get the token from the BotFather, it will use for validate user.
 
-## Expanding the ESLint configuration
+3. Develop and deploy your bot
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+To know if users come from telegram app, we copy from notcoin logic
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```javascript
+import WebApp from "@twa-dev/sdk"
+const isMiniApp = ["android", "android_x", "ios"].includes(WebApp.platform)
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+When you enter the mini-app page, it will bring hash data = #tgWebAppData=.....
+
+This is used for user validation.
